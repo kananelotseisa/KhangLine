@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <title>Home</title>
+</head>
+
+<body>
+  <!--header start-->
+    <header>
+        <nav id="menu">
+            <img src="./images/logowhite.png" alt="">
+            <ul id="toggle_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><button class="a">Companies</button>
+                    <ul class="drop-down">
+                        <li><a href="companies/khangline_logistics.html">KhangLine Logistics</a></li>
+                        <li><a href="companies/khangline_oil.html">KhangLine Oil</a></li>
+                        <li><a href="companies/khangline_construction.html">KhangLine Construction</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="toggle-btn" onclick="menu_pop()">
+                <div class="icon-bar"></div>
+                <div class="icon-bar"></div>
+                <div class="icon-bar"></div>
+            </button>
+            <button id="close-btn" onclick="menu_close()">
+                &times;
+            </button>
+        </nav>
+    </header>
+    <div class="progress-bar">
+      <div class="filled"></div>
+    </div>
+    <!--header end-->
+
+    <!--main start-->
+    <main>
+        <section class="slider">
+            <!--logistics content start-->
+            <div class="slide current">
+                <div class="logistics">
+                    <div class="heading">
+                        <h1>WELCOME TO</h1>
+                        <div class="line"></div>
+                    </div>
+                    <h2>KhangLine Logistics</h2>
+                    <p>KhangLine Logistics is a logistics company that provides transport, distribution and
+                        warehousing logistics to different sectors of the economy.
+                    </p>
+
+                    <!-- <p class="p2">You need the distributor as soon as possible?</p>
+                    <a href="/contact.html" class="button">Contact us now</a> -->
+                </div>
+            </div>
+            <!--logistics content end-->
+
+            <!--oil content start-->
+            <div class="slide">
+                <div class="oil">
+                    <div class="heading">
+                        <h1>DID YOU KNOW?</h1>
+                        <div class="line"></div>
+                    </div>
+                    <h2>KhangLine Oils</h2>
+                    <p>Have a direct and personal contact with the main players in the industry which are the mines. we have a depot
+                    at Ha-Mabote which has the capacity to hold in excess of 1000 tons of coal.
+                    </p>
+
+                    <!-- <p class="p2">You need the distributor as soon as possible?</p>
+                    <a href="/about.html" class="button">About us</a> -->
+                </div>
+            </div>
+            <!--oil content end-->
+
+            <!--construction content start-->
+            <div class="slide">
+            <div class="construction">
+                    <div class="heading">
+                        <h1>WELCOME TO</h1>
+                        <div class="line"></div>
+                    </div>
+                    <h2>KhangLine construction</h2>
+                    <p>KhangLine Construction is a company that provides a diversified engineering
+                        and construction services.
+                    </p>
+
+                    <p class="p2">You need the distributor as soon as possible?</p>
+                    <a href="/companies/khangline_construction.html" class="button">Read more</a>
+                </div>
+            </div>
+            <!--construction content end-->
+        </section>
+
+        <section class="service">
+            <div class="animation">
+                <div class="head">
+                    <h1>OUR COMPANIES</h1>
+                <div class="line"></div>
+            </div>
+            </div>
+
+            <div class="service-cards">
+                <!--card1-->
+                <div class="flip-card-container">
+                    <div class="flip-card">
+                        <div class="flip-card-front">
+                            <h1>KhangLine Construction</h1>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>We strives to create employment and deliver
+                                services through applied modernised technology
+                                and build capacity throughout Lesotho in order
+                                to make a significant contribution to sustainable
+                                development in Lesotho.</p>
+                            <div class="container">
+                                <a href="companies/khangline_construction.html" class="button">View more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card2-->
+                <div class="flip-card-container">
+                    <div class="flip-card">
+                        <div class="flip-card-front card2">
+                            <h1>KhangLine Logistics</h1>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>We strive 
+                                to be the best logistics company in Lesotho and beyond by 
+                                providing excellent services that satisfies all our customer needs.
+                                We will achieve this through adherence to constantly evolving quality
+                                objectives and a team of highly skilled members.</p>
+                            <div class="container">
+                                <a href="companies/khangline_logistics.html" class="button">View more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card3-->
+                <div class="flip-card-container">
+                    <div class="flip-card">
+                        <div class="flip-card-front card3">
+                            <h1>KhangLine Oils</h1>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>in the case of
+                                bulk, the majority of our products is
+                                moved directly from the mines to
+                                the customer in order to reduce
+                                handling costs</p>
+                            <div class="container">
+                                <a href="companies/khangline_oil.html" class="button">View more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--main end-->
+
+    <!--footer start-->
+    <footer>
+      <div class="footer-left">
+        <h1>ABOUT US</h1>
+        <img src="./images/logowhite.png" alt="logo">
+        <p>Khang group pty ltd company is a multi-sector corporation
+           embodying logistics,oils and construction.</p>
+           <h1 class="icon-header">FOLLOW US</h1>
+           <div class="icons">
+            <a href="https://web.facebook.com/profile.php?id=100063864260226"><img src="/images/icons/fb.png" alt="" srcset=""></a>
+            <a href="https://ls.linkedin.com/in/khang-line-0b3906196"><img src="/images/icons/in.png" alt="" srcset=""></a>
+           </div>
+        </div>
+
+        <div class="footer-mid">
+          <h1>QUICK LINKS</h1>
+          <ul>
+          <li><img src="./images/icons/list-style.png" alt=""><a href="companies/khangline_logistics.html">KhangLine Logistics</a></li>
+          <li><img src="./images/icons/list-style.png" alt=""><a href="companies/khangline_oil.html">KhangLine Oils</a></li>
+          <li><img src="./images/icons/list-style.png" alt=""><a href="companies/khangline_construction.html">KhangLine Construction</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h1>CONTACT US</h1>
+          <h2>DLM Complex, Ha-Mabote, Maseru, Lesotho</h2>
+          <div class="numbers">
+            <h3>+266 6317 2562</h3>
+            <h3>+266 5680 8270</h3>
+            <h3>+266 5969 7948</h3>
+            <h3>+266 5891 6152</h3>
+          </div>
+          <ul>
+            <li><a href="mailto:info@khangline.co.ls">info@khangline.co.ls</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!--footer end-->
+
+    <!--navigation bars-->
+    <div class="buttons">
+        <button class="prev-btn">&leftarrow;</button>
+        <button class="next-btn">&rightarrow;</button>
+    </div>
+    
+    <!--scroll to top button-->
+    <a href="#" class="to-top">
+      <img src="./images/icons/scroll-btn.png" alt="">
+    </a>
+    <!--Javascript links-->
+    <script src="js/progressbar.js"></script>
+    <script src="js/slides.js"></script>
+</body>
+
+</html>

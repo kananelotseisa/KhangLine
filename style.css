@@ -1,0 +1,438 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: darkred;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #ee1d23;
+}
+
+.slider {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.current {
+  opacity: 1;
+}
+.slide.current .construction,
+.slide.current .oil,
+.slide.current .logistics{
+  animation: fade_in 0.7s forwards 1s linear;
+}
+
+/*slide content*/
+.logistics,
+.oil,
+.construction{
+  margin-left: 120px;
+  max-width: 550px;
+  opacity: 0;
+  color: white;
+  
+}
+
+.heading{
+  display: flex;
+  flex-direction: column;
+}
+
+.heading .line{
+  height: 3px;
+  width: 100px;
+  background-color:#ee1d23 ;
+}
+.heading h1{
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  color: #ee1d23;
+}
+
+
+
+.head{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.head h1{
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  color: #ee1d23;
+  font-size: 1.5em;
+
+}
+
+.head .line{
+  height: 3px;
+  width: 50px;
+  background-color:#ee1d23 ;
+  margin: 3px 0px;
+}
+
+.animate{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title{
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+
+.title .text{
+  display: flex;
+  align-items: baseline;
+}
+.title .text img{
+  height: 20px;
+  width: auto;
+  margin-right: 10px;
+}
+.title .line{
+  height: 3px;
+  width: 60px;
+  margin-left: 10px;
+  background-color:#ee1d23 ;
+}
+.title h1{
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  color: #ee1d23;
+}
+
+
+.oil h2,
+.construction h2,
+.logistics h2{
+  font-size: 2.4em;
+  margin-block-start: 1.6em;
+  margin-block-end: 0.5em;
+  text-transform: capitalize;
+}
+.oil p,
+.construction p,
+.logistics p{
+  line-height: 1.5;
+  text-align: justify;
+}
+.p2{
+  margin-block-start: 20px;
+  margin-block-end: 30px;
+}
+
+
+.oil .button,
+.construction .button,
+.logistics .button{
+  padding: 5px 20px;
+  border: #ee1d23 2px solid;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: #ee1d23;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*buttons*/
+
+.buttons {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+}
+.next-btn,
+.prev-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #f1f1f1;
+  color: #f1f1f1;
+  font-size: 20px;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.next-btn {
+  position: absolute;
+  right: 15px;
+}
+.prev-btn {
+  position: absolute;
+  left: 30px;
+}
+.next-btn:hover,
+.prev-btn:hover {
+  background: #f1f1f1;
+  color: black;
+}
+/*background images*/
+
+.slide:first-child {
+  background: url("images/homepage-logistics1.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(2) {
+  background: url("images/homepage-oil.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(3) {
+  background: url("images/homepage-construction.jpg") no-repeat center center/cover;
+}
+
+
+/*service section*/
+.service{
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 60px;
+}
+
+.service-cards{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.flip-card-container {
+  width: 280px;
+  height: 340px;
+  margin: 0 10px;
+  perspective: 1000px;
+}
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.flip-card-container:hover .flip-card {
+  transform: rotateY(180deg); /* <=>  rotateY(.5turn) */
+}
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  /* border-radius: 0.5rem; */
+}
+.flip-card-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 60px;
+  line-height: 1.3;
+  text-align: center;
+}
+.flip-card-back {
+  background-color: #ee1d23;
+  color: #fff;
+  display: flex;
+  padding: 20px 0px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+  text-align: center;
+  margin: 1rem;
+  margin-top: 0;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-block-end: 0em;
+}
+
+.flip-card-back .container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container .button{
+
+  padding: 5px 20px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: #ee1d23;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.flip-card-front {
+  background: url("images/card-construction.jpg") no-repeat center center/cover;
+}
+.card2 {
+  background: url("images/card-logistics.jpg") no-repeat center center/cover;
+}
+.card3{
+  background: url("images/card-oil.jpg") no-repeat center center/cover;
+}
+
+a{
+  text-decoration: none;
+  color: #bcc0c4;
+  font-weight: lighter;
+  font-size: 0.9em;
+  
+}
+
+ a:hover{
+  color: #ee1d23;
+  transition: color 0.3s ease-out;
+}
+
+/*responsive*/
+@media screen and (max-width: 768px) {
+  .service-cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .construction,
+  .logistics,
+  .oil {
+    margin-left: 70px;
+    margin-right: 30px;
+    animation: fade_in 1s forwards 0.1s linear;
+  }
+
+  .heading {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .heading .line {
+    height: 3px;
+    width: 70px;
+    background-color: #ee1d23;
+  }
+  .service{
+    height: 100%;
+  }
+  .head h1{
+    font-size: 1em;
+  }
+  /*buttons*/
+
+.buttons {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+}
+.next-btn,
+.prev-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #f1f1f1;
+  color: #f1f1f1;
+  font-size: 20px;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.logistics,
+.oil,
+.construction{
+  margin-left:0px;
+  margin-right:0px;
+  height: auto;
+  width: 100vw;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  color: white;
+  text-align: center;
+}
+
+.oil p,
+.construction p,
+.logistics p{
+  text-align:center;
+  line-height: 1.5;
+}
+
+.oil .button,
+.construction .button,
+.logistics .button{
+  padding: 5px 20px;
+  border: #ffffff 2px solid;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+}
+
+/*animations*/
+
+@keyframes fade_in {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

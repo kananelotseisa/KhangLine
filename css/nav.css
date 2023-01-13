@@ -1,0 +1,243 @@
+header{
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+    top: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.progress-bar{
+    position: fixed;
+    top: 70px;
+    z-index: 2;
+    width: 100%;
+    height: 4px;
+}
+    
+.filled{
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, darkred , red);
+}
+    
+#menu{
+    padding: 0px 70px;
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu #close-btn{
+    position: absolute;
+    right: 30px;
+    font-size: 50px;
+    background: transparent;
+    color: white;
+    display: none;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+    transition: display 1s ease-in;
+}
+
+#menu #toggle-btn{
+    width: 30px;
+    height: 20px;
+    position: relative;
+    background: rgb(0, 0, 0);
+    color: black;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    cursor: pointer;
+    transition: display 1s ease-in-out;
+}
+
+#toggle-btn .icon-bar{
+    background: white;
+    height: 3px;
+    width: 100%;
+}
+
+#menu img{
+    height: 30px;
+}
+
+ul{
+    display: flex;
+
+}
+
+#menu ul li{
+    padding: 10px;
+    list-style: none;
+    margin-left: 40px;
+    position: relative;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+}
+
+#menu ul li .a{
+    background:none;
+    border: none;
+    margin: 0;
+    font-size: 0.9em;
+    cursor: pointer;
+    color: white;
+}
+
+#menu ul li .a:hover,
+#menu ul  li:hover > a{
+    color: #ee1d23;
+    transition: color 0.1s ease-out;
+}
+#menu ul  li ul.drop-down{
+    position: absolute;
+    width: 180px;
+    padding-top:10px;
+    background-color:black;
+    text-align: left;
+    visibility: hidden;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.1s 0.1s linear;
+}
+#menu ul  li ul.drop-down li{
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+#menu ul  li ul.drop-down li:hover{
+    background: #ee1d23;
+}
+#menu ul  li ul.drop-down li a{
+    color: white;
+}
+#menu ul  li:hover ul.drop-down{
+opacity: 1;
+display: block;
+visibility: visible;
+}
+#menu ul  li:hover ul.drop-down li a{
+    color: white;
+    transition: color 0.1s ease-out;
+}
+
+#menu ul  li:hover ul.drop-down li a:hover{
+    color: white;
+}
+.drop-down li{
+    background-color: black;
+    margin-left:0px;
+}
+
+/*scroll to top*/
+.to-top{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    cursor: pointer;
+    opacity: 0;
+    transition: bottom 0.1s;
+    pointer-events:none;
+}
+
+.to-top img{
+    width: 100%;
+    height: auto;
+}
+
+
+.to-top.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*responsive*/
+@media screen and (max-width: 1024px) {
+    header{
+        z-index: 10;
+    }
+    #menu img{
+        height: 20px;
+    }
+    #menu{
+        padding: 0px 10px;
+    }
+
+    #menu #toggle_links{
+        background-color: black;
+        display: none;
+        position: absolute;
+        top: 69px;
+        right: 0;
+        width: 100%;
+        padding: 10px 10px;
+        z-index: 8;
+        opacity: 0;
+        transition: all 1s;
+    }
+    #menu ul li{
+        text-align: left;
+        margin-left:0px;
+    }
+    #menu ul li a{
+        color: white;
+        font-size: 1em;
+    }
+
+    #menu #toggle-btn{
+        display: flex;
+    }
+
+    #menu ul li ul.drop-down {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+        background-color: black;
+        text-align: left;
+        display: none;
+        opacity: 0;
+        transition: all 0.3s ease-in-out 0.1s linear;
+    }
+
+    #menu ul  li ul.drop-down li:hover{
+        background: #ee1d23;
+    }
+    #menu ul  li ul.drop-down li:hover a{
+        color: white;
+    }
+
+    #menu ul li a,
+    #menu ul li .a{
+        font-size: 1.2em;
+    }
+}
+
+/*key frames*/
+
+@keyframes toggle_up {
+    from{
+        top: -69px;
+        opacity: 0;
+    }
+
+    to{
+        top: 69px;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,484 @@
+.top{
+    width: 100vw;
+    position: fixed;
+    height: 40vh;
+    top: 40px;
+    color: white;
+    padding: 0px 10%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+}
+.top.khang-oil{
+    background: url("../images/kangline-oil.jpg") no-repeat top center/cover;
+}
+
+.top.khang-logistics{
+    background: url("../images/kangline-logistics.jpg") no-repeat top center/cover;
+}
+
+.top.khang-construction{
+    background: url("../images/kangline-construction.jpg") no-repeat top center/cover;
+}
+
+.text-head{
+    overflow: hidden;
+}
+.text-head h1{
+    transform: translateY(80px);
+    font-size: 3em;
+    animation: slide_up 0.8s 0.5s  forwards linear;
+}
+.text h2{
+    margin-block-start: 20px;
+    font-weight: 100;
+    opacity: 1;
+    font-size: 1em;
+    transform: all 1s;
+}
+
+.body .head,
+.products .head{
+    position: relative;
+    margin-top: 30px;
+}
+
+.products .head{
+    padding-top: 40px;
+}
+
+.body{
+    margin-top: 300px;
+    padding-top: 1px;
+    padding-bottom: 30px;
+    width: 100vw; 
+    background-color: white;
+}
+
+.boxes{
+    margin-bottom: 70px; 
+    padding: 0px 8%;
+    text-align: justify;
+    text-align-last: center;
+    width: 100vw;
+}
+.support{
+    width: 100vw;
+    margin-bottom: 0px; 
+}
+
+
+.construction-services .points,
+.support .points{
+    width: 100vw;
+    display: flex;
+    min-height: 100px;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.points .list{
+    margin: 0px 20px;
+    text-align: center;
+    width: 20%;
+}
+
+.list img{
+    width: auto;
+    height: 70px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+.about-boxes,
+.products-boxes{
+    display: flex;
+    width: 100vw;
+    min-height: 400px;
+    justify-content: center;
+}
+.about-box,
+.about-box2,
+.about-box3,
+.products-box,
+.products-box2,
+.products-box3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0px 20px;
+    height: 400px;
+    width: 300px;
+}
+
+.about-box .picture,
+.about-box2 .picture,
+.about-box3 .picture,
+.products-box .picture,
+.products-box2 .picture,
+.products-box3 .picture{
+    height: 50%;
+    width: 100%;
+}
+
+.products-box .picture{
+    background: url("../images/fuel.jpg") no-repeat center center/cover;
+    transition: 1s all ease-in-out;
+}
+
+.products-box2 .picture{
+    background: url("../images/firewood.jpg") no-repeat center center/cover;
+}
+
+.products-box3 .picture{
+    background: url("../images/charcoal.jpg") no-repeat center center/cover;
+}
+
+
+.about-box .picture{
+    background: url("../images/construction1.jpg") no-repeat center center/cover;
+}
+
+.about-box2 .picture{
+    background: url("../images/construction2.jpg") no-repeat center center/cover;
+}
+
+.about-box3 .picture{
+    background: url("../images/construction3.jpg") no-repeat center center/cover;
+}
+
+
+.products-boxes h3{
+    padding: 10px;
+    color: #ee1d23;
+    display: flex;
+    align-items: baseline;
+}
+
+.products-boxes h3 span img{
+    height: 15px;
+    width: auto;
+    margin-right: 10px;
+}
+.products-boxes span .line{
+    margin: 0px 10px;
+    content: '';
+    height: 3px;
+    width: 60px;
+    background-color: #ee1d23;
+}
+.about-boxes .points,
+.products-boxes .points{
+    height: 48%;
+    width: 100%;
+    color: white;
+    background-color: rgb(30, 30, 30);
+}
+
+.about-boxes .points{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.about-boxes .points p{
+    text-align: center;
+    line-height: 1.5;
+    padding: 0px 10px;
+}
+.products-boxes .points p{
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.points p span img{
+    height: 12px;
+    width: auto;
+}
+
+
+.promise{
+    width: 100vw;
+} 
+
+.promise .head{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.promise p{
+    text-align: center;
+    padding: 0px 10px;
+}
+/*logistic promises divs start*/
+.support .promises {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 120px;
+    justify-content: center;
+    padding: 0px 20px;
+}
+.wrapper,
+.wrapper1 {
+    width: 300px;
+    height: 140px;
+    margin: 20px 20px;
+    padding: 10px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    background: rgba(246, 2, 2, 0.537);
+    position: relative;
+  }
+  
+  .wrapper:hover{
+    transition: all 1s;
+    background: rgba(246, 2, 2, 0.942);
+  }
+  .wrapper1{
+    background: rgba(11, 11, 11, 0.537);
+  }
+  .wrapper1:hover{
+    transition: all 1s;
+    background: rgba(11, 11, 11, 0.942);
+  } 
+
+  .BorderTopBottom:before,
+  .BorderTopBottom1:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: -8px;
+    left: -8px;
+    background: #ee1d23;
+    transition: all 0.5s ease;
+  }
+
+
+  .BorderTopBottom:after,
+  .BorderTopBottom1:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    bottom: -8px;
+    right: -8px;
+    background: #ee1d23;
+    transition: all 0.5s ease;
+  }
+  .BorderLeftRight:before,
+  .BorderLeftRight1:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 3px;
+    height: 30px;
+    background: #ee1d23;
+    transition: all 0.5s ease;
+  }
+  .BorderLeftRight:after,
+  .BorderLeftRight1:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    width: 3px;
+    height: 30px;
+    background: #ee1d23;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper:hover .BorderTopBottom:before,
+  .wrapper:hover .BorderTopBottom:after,
+  .wrapper1:hover .BorderTopBottom1:before,
+  .wrapper1:hover .BorderTopBottom1:after {
+    width: 315px;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper:hover .BorderLeftRight:before,
+  .wrapper:hover .BorderLeftRight:after, 
+  .wrapper1:hover .BorderLeftRight1:before,
+  .wrapper1:hover .BorderLeftRight1:after {
+    height: 155px;
+    transition: all 0.5s ease;
+  }
+
+  .BorderTopBottom1:before,
+  .BorderTopBottom1:after,
+  .BorderLeftRight1:before,
+  .BorderLeftRight1:after{
+    background: rgb(11, 11, 11);
+  }
+  /*promises div end*/
+
+  .construction-services{
+    padding-top: 30px;
+  }
+.construction-services .points{
+    display: flex;
+    justify-content: center;
+}
+
+.construction-services .points .img{
+    height: 260px;
+    width: 200px;
+    background: url("../images/road.jpg") no-repeat center  center/cover;
+}
+.services-points{
+    padding-left: 20px;
+    width: 500px;
+    text-align: justify;
+}
+.services-points .head{
+    margin-top:0px;
+    display: block;
+    width: 100%;
+  }
+
+  .services-points .head h1{
+    font-size:1.3em;
+    color: rgb(30, 30, 30);
+  }
+  
+.services-points .head .line{
+    height: 3px;
+    width: 50px;
+    background-color:#ee1d23 ;
+    margin: 3px 0px;
+  }
+
+
+  .services-points .spoints{
+    display: flex;
+  }
+
+  .spoints .points1,
+  .spoints .points2{
+    line-height: 1.7;
+    margin-top: 30px;
+    margin-right: 50px;
+  }
+
+
+  .spoints .points1 span,
+  .spoints .points2 span{
+    color: #ee1d23;
+    margin-right: 10px;
+  }
+/*responsive*/
+@media screen and (max-width: 768px) {
+
+.text-head h1{
+    transform: translateY(80px);
+    font-size: 2em;
+    text-align: center;
+}
+.text h2{
+    margin-block-start: 20px;
+    font-weight: 100;
+    opacity: 1;
+    text-align: center;
+    font-size: 1em;
+    transform: all 1s;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.support .points{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 0px;
+    gap: 30px;
+}
+
+.points .list {
+    margin: 0px 0px;
+    text-align: center;
+    width: 100vw;
+    display: block;
+}
+.about-boxes,
+.products-boxes {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 400px;
+    align-items: center;
+    gap: 50px;
+}
+.construction-services{
+    padding: 0px 0px;
+}
+.construction-services .points{
+    display: block;
+    padding: 0;
+    width: 100vw;
+}
+
+.wrapper, .wrapper1 {
+    min-width: 300px;
+    min-height: 140px;
+}
+
+.construction-services .points .img{
+    height: 230px;
+    width: 100%;
+    background: url("../images/road.jpg") no-repeat center  center/cover;
+}
+.services-points{
+    padding:0px;
+    width: 100vw;
+    text-align: justify;
+}
+.services-points p{
+    width: 100vw;
+    padding: 0 10px;
+}
+
+.services-points .spoints{
+    display: block;
+  }
+
+
+  
+  .spoints .points1,
+  .spoints .points2{
+    line-height: 1.7;
+    margin-top: 30px;
+    margin-right: 0px;
+  }
+
+  .spoints .points2{
+    margin-top: 0px;
+  }
+
+  .services-points .head{
+    padding: 10px;
+  }
+  .services-points .head h1{
+    font-size:1.3em;
+    color: rgb(30, 30, 30);
+  }
+}
+
+@keyframes slide_up {
+    from{
+        transform: translateY(80px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
