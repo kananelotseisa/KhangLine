@@ -1,0 +1,372 @@
+.top{
+    width: 100vw;
+    position: fixed;
+    height: 40vh;
+    top: 40px;
+    color: white;
+    padding: 0px 10%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+}
+.top.khang-oil{
+    background: url("../images/kangline-oil.jpg") no-repeat top center/cover;
+}
+
+.top.khang-team{
+    background: url("../images/kangline-logistics.jpg") no-repeat top center/cover;
+}
+
+.top.khang-construction{
+    background: url("../images/kangline-construction.jpg") no-repeat top center/cover;
+}
+
+.text-head{
+    overflow: hidden;
+}
+.text-head h1{
+    transform: translateY(80px);
+    font-size: 3em;
+    animation: slide_up 0.8s 0.5s  forwards linear;
+}
+.text h2{
+    margin-block-start: 20px;
+    font-weight: 100;
+    opacity: 1;
+    font-size: 1em;
+    transform: all 1s;
+}
+
+.body .head,
+.products .head{
+    position: relative;
+    margin-top: 30px;
+}
+
+.products .head{
+    padding-top: 40px;
+}
+
+.body{
+    margin-top: 300px;
+    padding-top: 1px;
+    padding-bottom: 30px;
+    width: 100vw; 
+    background-color: white;
+}
+
+/*logistic wrapper divs start*/
+.team .wrapper {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 120px;
+    gap: 3%;
+    justify-content: center;
+    padding: 0px 20px;
+}
+.card,
+.card1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 270px;
+    height: 420px;
+    margin: 40px 10px;
+    padding: 10px;
+
+    color: white;
+    background: rgba(246, 2, 2, 0.537);
+    position: relative;
+  }
+  
+  .profilepic{
+    background-color: aliceblue;
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card .name,
+  .card1 .name{
+    font-size: 1.6em;
+    font-weight: normal;
+  }
+
+  .card p,
+  .card1 p{
+    font-weight: 600;
+  }
+
+  .card .links,
+  .card1 .links{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .side1{
+    display: flex;
+    height: 100%;
+    gap: 10px;
+  }
+  .link{
+    height: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+    background: url("../images/icons/call1.jpg") no-repeat center center/cover;
+    background-color: aliceblue;
+    transition: 0.3s ease-in-out;
+  }
+  .links .more{
+    background: url("../images/icons/knowmore.png") no-repeat center center/cover;
+  }
+
+  .link:hover{
+    transition: 0.3s ease;
+transform: translateY(-3px);
+  }
+  .card:hover{
+    transition: all 1s;
+    background: rgba(246, 2, 2, 0.942);
+  }
+  .card1{
+    background: rgba(11, 11, 11, 0.537);
+  }
+  .card1:hover{
+    transition: all 1s;
+    background: rgba(11, 11, 11, 0.942);
+  } 
+
+  .BorderTopBottom:before,
+  .BorderTopBottom1:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: -8px;
+    left: -8px;
+    background: #ee1d23;
+    transition: all 0.5s ease;
+  }
+
+
+  .BorderTopBottom:after,
+  .BorderTopBottom1:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    bottom: -8px;
+    right: -8px;
+    background: #ee1d23;
+    transition: all 0.5s ease;
+  }
+  .BorderLeftRight:before,
+  .BorderLeftRight1:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 3px;
+    height: 30px;
+    background: #ee1d23;
+    transition: all 0.5s ease;
+  }
+  .BorderLeftRight:after,
+  .BorderLeftRight1:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    width: 3px;
+    height: 30px;
+    background: #ee1d23;
+    transition: all 0.5s ease;
+  }
+  
+  .card:hover .BorderTopBottom:before,
+  .card:hover .BorderTopBottom:after,
+  .card1:hover .BorderTopBottom1:before,
+  .card1:hover .BorderTopBottom1:after {
+    width: 285px;
+    transition: all 0.5s ease;
+  }
+  
+  .card:hover .BorderLeftRight:before,
+  .card:hover .BorderLeftRight:after, 
+  .card1:hover .BorderLeftRight1:before,
+  .card1:hover .BorderLeftRight1:after {
+    height: 435px;
+    transition: all 0.5s ease;
+  }
+
+  .BorderTopBottom1:before,
+  .BorderTopBottom1:after,
+  .BorderLeftRight1:before,
+  .BorderLeftRight1:after{
+    background: rgb(11, 11, 11);
+  }
+  /*wrapper div end*/
+
+  .construction-services{
+    padding-top: 30px;
+  }
+.construction-services .points{
+    display: flex;
+    justify-content: center;
+}
+
+.construction-services .points .img{
+    height: 260px;
+    width: 200px;
+    background: url("../images/road.jpg") no-repeat center  center/cover;
+}
+.services-points{
+    padding-left: 20px;
+    width: 500px;
+    text-align: justify;
+}
+.services-points .head{
+    margin-top:0px;
+    display: block;
+    width: 100%;
+  }
+
+  .services-points .head h1{
+    font-size:1.3em;
+    color: rgb(30, 30, 30);
+  }
+  
+.services-points .head .line{
+    height: 3px;
+    width: 50px;
+    background-color:#ee1d23 ;
+    margin: 3px 0px;
+  }
+
+
+  .services-points .spoints{
+    display: flex;
+  }
+
+  .spoints .points1,
+  .spoints .points2{
+    line-height: 1.7;
+    margin-top: 30px;
+    margin-right: 50px;
+  }
+
+
+  .spoints .points1 span,
+  .spoints .points2 span{
+    color: #ee1d23;
+    margin-right: 10px;
+  }
+/*responsive*/
+@media screen and (max-width: 768px) {
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-head h1{
+    transform: translateY(80px);
+    font-size: 2em;
+    text-align: center;
+}
+.text h2{
+    margin-block-start: 20px;
+    font-weight: 100;
+    opacity: 1;
+    text-align: center;
+    font-size: 1em;
+    transform: all 1s;
+}
+.card:hover .BorderTopBottom:before,
+.card:hover .BorderTopBottom:after,
+.card1:hover .BorderTopBottom1:before,
+.card1:hover .BorderTopBottom1:after {
+  width: 315px;
+  transition: all 0.5s ease;
+}
+
+.card:hover .BorderLeftRight:before,
+.card:hover .BorderLeftRight:after, 
+.card1:hover .BorderLeftRight1:before,
+.card1:hover .BorderLeftRight1:after {
+  height: 435px;
+  transition: all 0.5s ease;
+}
+
+.card, .card1 {
+    min-width: 300px;
+    min-height: 140px;
+}
+
+
+}
+
+@keyframes slide_up {
+    from{
+        transform: translateY(80px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
+  /*profile pics*/
+
+  .director,
+  .workshop,
+  .finance,
+  .operations,
+  .operations2,
+  .operations3{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .director{
+    background: url("../images/profile/Tieho.jpg") no-repeat center center/cover;
+  }
+
+  .workshop{
+    background: url("../images/profile/Mohale.jpg") no-repeat center center/cover;
+  }
+
+  .finance{
+    background: url("../images/profile/Makatleho.jpg") no-repeat center center/cover;
+  }
+
+  .operations{
+    background: url("../images/profile/Mpoetsi.jpg") no-repeat center center/cover;
+  }
+
+  .operations2{
+    background: url("../images/profile/Mabatho.jpg") no-repeat center center/cover;
+  }
+
+  .operations3{
+    background: url("../images/profile/Mohajana.jpg") no-repeat center center/cover;
+  }
+
+
+  .directorcard:hover > .profilepic .director,
+  .workshopcard:hover > .profilepic .workshop,
+  .financecard:hover > .profilepic .finance,
+  .operationscard:hover > .profilepic .operations,
+  .operationscard2:hover > .profilepic .operations2,
+  .operationscard3:hover > .profilepic .operations3{
+    width: 120%;
+    height: 120%;
+  }

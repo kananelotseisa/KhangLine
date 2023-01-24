@@ -372,7 +372,9 @@
   }
 /*responsive*/
 @media screen and (max-width: 768px) {
-
+.top{
+    justify-content: center;
+}
 .text-head h1{
     transform: translateY(80px);
     font-size: 2em;

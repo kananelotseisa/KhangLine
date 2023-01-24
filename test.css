@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  .top { 
+    width:100%;
+    height: 200px;  
+  }
+  
+  
+  .red {
+    background:rgb(2, 98, 233); 
+  } 
+  
+  .mainContainer {
+    width:100%;
+    float:left;
+  }
+  
+  #polygon {
+    padding-left:20px;
+    margin-left:20px;
+    width:100%;
+  }

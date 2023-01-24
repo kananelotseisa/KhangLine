@@ -1,16 +1,19 @@
 
 /*footer css*/
 footer{
-    height: 300px;
     background: url("../images/footer.jpg") no-repeat center center/cover;
     color: white;
     position: relative;
     overflow: hidden;
-    padding: 40px 140px;
+    padding: 40px 0px 0px;
+  }
+  
+  .footerwrapp{
+    padding: 0px 140px 40px;
     display: flex;
     justify-content:space-between;
   }
-  
+
   footer h1{
     font-size: 1em;
     margin-bottom: 20px;
@@ -99,7 +102,21 @@ footer{
     margin-right: 10px;
   }
 
+.copyright{
+  border-top: #bcc0c4 1px solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 140px 0px;
+  align-items: center;
+}
 
+.copyright p span{
+  font-weight: 800;
+
+}
+span a{
+  font-size: 1em;
+}
   
 /*responsive*/
 @media screen and (max-width: 768px) {
@@ -107,9 +124,16 @@ footer{
     footer{
       height: 100%;
       display: block;
+      
+    }
+    .footerwrapp{
+      display: block;
       padding: 20px 20px;
     }
-  
+    .copyright{
+      display:block;
+      padding: 10px 20px 0px;
+    }
     .footer-left{
       width: 100%;
       margin-bottom: 40px;
