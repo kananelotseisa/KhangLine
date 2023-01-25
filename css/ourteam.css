@@ -106,6 +106,8 @@
     width: 100%;
     height: 30px;
     display: flex;
+    position: relative;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -113,6 +115,11 @@
     display: flex;
     height: 100%;
     gap: 10px;
+  }
+  .links p{
+position: absolute;
+right: 35px;
+color: rgb(103, 103, 103);
   }
   .link{
     height: 100%;
@@ -137,11 +144,11 @@ transform: translateY(-3px);
     background: rgba(246, 2, 2, 0.942);
   }
   .card1{
-    background: rgba(11, 11, 11, 0.537);
+    background: rgba(11, 11, 11, 0.708);
   }
   .card1:hover{
     transition: all 1s;
-    background: rgba(11, 11, 11, 0.942);
+    background: rgba(11, 11, 11, 1);
   } 
 
   .BorderTopBottom:before,
@@ -215,60 +222,6 @@ transform: translateY(-3px);
   }
   /*wrapper div end*/
 
-  .construction-services{
-    padding-top: 30px;
-  }
-.construction-services .points{
-    display: flex;
-    justify-content: center;
-}
-
-.construction-services .points .img{
-    height: 260px;
-    width: 200px;
-    background: url("../images/road.jpg") no-repeat center  center/cover;
-}
-.services-points{
-    padding-left: 20px;
-    width: 500px;
-    text-align: justify;
-}
-.services-points .head{
-    margin-top:0px;
-    display: block;
-    width: 100%;
-  }
-
-  .services-points .head h1{
-    font-size:1.3em;
-    color: rgb(30, 30, 30);
-  }
-  
-.services-points .head .line{
-    height: 3px;
-    width: 50px;
-    background-color:#ee1d23 ;
-    margin: 3px 0px;
-  }
-
-
-  .services-points .spoints{
-    display: flex;
-  }
-
-  .spoints .points1,
-  .spoints .points2{
-    line-height: 1.7;
-    margin-top: 30px;
-    margin-right: 50px;
-  }
-
-
-  .spoints .points1 span,
-  .spoints .points2 span{
-    color: #ee1d23;
-    margin-right: 10px;
-  }
 /*responsive*/
 @media screen and (max-width: 768px) {
 .top{

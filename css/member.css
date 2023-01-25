@@ -15,18 +15,26 @@
 .information h1{
   color: rgb(82, 82, 82);
   font-size: 1.3em;
+  gap: 30px;
 }
+.information h1 span{
+  left: -8px;
+  position: relative;
 
+}
 .information h1 span a h1{
-  display: inline;
-  color: rgb(82, 82, 82);
+  color: #ee1d23;
   font-size: 1em;
   font-weight: bold;
-  text-decoration: underline 2px rgb(82, 82, 82);
 }
-
+.information h1 ul{
+  margin-left: 20px;
+  color: #ee1d23;
+  gap: 5px 30px;
+  flex-wrap: wrap;
+}
 .information h2{
-  font-size: 3em;
+  font-size: 2.5em;
 
 }
 .information h3{
@@ -57,6 +65,7 @@
   font-size: 1em;
 }
 .information .location{
+  margin-block-start: 0.5em;
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
