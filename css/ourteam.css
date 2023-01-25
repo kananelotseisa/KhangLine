@@ -74,7 +74,6 @@
     height: 420px;
     margin: 40px 10px;
     padding: 10px;
-
     color: white;
     background: rgba(246, 2, 2, 0.537);
     position: relative;
@@ -85,8 +84,10 @@
     width: 100%;
     overflow: hidden;
     aspect-ratio: 1/1;
+    align-items:flex-end;
     display: flex;
     justify-content: center;
+    transition: 0.3s ease-in-out;
   }
 
   .card .name,
@@ -330,9 +331,10 @@ transform: translateY(-3px);
   .finance,
   .operations,
   .operations2,
-  .operations3{
-    width: 100%;
-    height: 100%;
+  .operations3,
+  .assistant{
+    width: 110%;
+    height: 110%;
     transition: 0.3s all ease-in-out;
   }
 
@@ -360,13 +362,18 @@ transform: translateY(-3px);
     background: url("../images/profile/Mohajana.jpg") no-repeat center center/cover;
   }
 
+  .assistant{
+    background: url("../images/profile/Hape.jpg") no-repeat center center/cover;
+  }
 
   .directorcard:hover > .profilepic .director,
   .workshopcard:hover > .profilepic .workshop,
   .financecard:hover > .profilepic .finance,
   .operationscard:hover > .profilepic .operations,
   .operationscard2:hover > .profilepic .operations2,
-  .operationscard3:hover > .profilepic .operations3{
-    width: 120%;
-    height: 120%;
+  .operationscard3:hover > .profilepic .operations3,
+  .assistantcard:hover > .profilepic .assistant{
+    width: 160%;
+    height: 160%;
+    transform: translateY(80px);
   }

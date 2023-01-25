@@ -17,6 +17,14 @@
   font-size: 1.3em;
 }
 
+.information h1 span a h1{
+  display: inline;
+  color: rgb(82, 82, 82);
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: underline 2px rgb(82, 82, 82);
+}
+
 .information h2{
   font-size: 3em;
 
@@ -193,6 +201,11 @@ button:hover{
   width: 100%;
   aspect-ratio: 1/1;
 }
+.information h2 {
+  font-size: 2.5em;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.3em;
+}
 .wrapp{
   padding: 0px 30px;
 }
@@ -211,7 +224,9 @@ button:hover{
       overflow: hidden;
       aspect-ratio: 1/1;
       display: flex;
+      align-items:flex-end;
       justify-content: center;
+      transition: 0.3s ease-in-out;
     }
 
     .director,
@@ -219,9 +234,10 @@ button:hover{
     .finance,
     .operations,
     .operations2,
-    .operations3{
-      width: 100%;
-      height: 100%;
+    .operations3,
+    .assistant{
+      width: 110%;
+      height: 110%;
       transition: 0.3s all ease-in-out;
     }
   
@@ -248,6 +264,9 @@ button:hover{
     .operations3{
       background: url("../images/profile/Mohajana.jpg") no-repeat center center/cover;
     }
+    .assistant{
+      background: url("../images/profile/Hape.jpg") no-repeat center center/cover;
+    }
   
   
     .directorcard:hover > .profilepic .director,
@@ -255,7 +274,9 @@ button:hover{
     .financecard:hover > .profilepic .finance,
     .operationscard:hover > .profilepic .operations,
     .operationscard2:hover > .profilepic .operations2,
-    .operationscard3:hover > .profilepic .operations3{
-      width: 120%;
-      height: 120%;
+    .operationscard3:hover > .profilepic .operations3,
+    .assistantcard:hover > .profilepic .assistant{
+      width: 150%;
+      height: 150%;
+      transform: translateY(80px);
     }

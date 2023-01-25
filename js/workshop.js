@@ -1,13 +1,15 @@
-const shareBtn = document.getElementById('shareDirectorBtn')
 
-shareBtn.addEventListener('click', event => {
+const shareWorkshopBtn = document.getElementById('shareWorkshopBtn');
+
+shareWorkshopBtn.addEventListener('click', event => {
 
   // Check for Web Share api support
   if (navigator.share) {
     // Browser supports native share api
     navigator.share({
-      text: 'Please read this great article: ',
-      url: 'https:khangline.co.ls/members/tiehokhang.html'
+        title:'Mohale Khang: Digital Business Card',
+        text: 'Working is workshop manager, contact me today!',
+        url: 'https:khangline.co.ls/members/mohalekhang.html'
     }).then(() => {
       console.log('Thanks for sharing!');
     })
